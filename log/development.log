@@ -6733,3 +6733,25 @@ Processing by RoutesController#create as HTML
 Completed 200 OK in 25ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 7478)
 
 
+Started GET "/routes" for 127.0.0.1 at 2020-08-04 23:06:51 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RoutesController#index as HTML
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.2ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:14
+  Rendered routes/index.html.erb within layouts/application (Duration: 21.2ms | Allocations: 3724)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 74.6ms | ActiveRecord: 0.9ms | Allocations: 16908)
+
+
+Started GET "/routes" for 127.0.0.1 at 2020-08-04 23:07:13 +0300
+Processing by RoutesController#index as HTML
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:14
+  Rendered routes/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 999)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 7670)
+
+
