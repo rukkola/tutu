@@ -6755,3 +6755,37 @@ Processing by RoutesController#index as HTML
 Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 0.1ms | Allocations: 7670)
 
 
+Started GET "/routes" for 127.0.0.1 at 2020-08-04 23:25:56 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RoutesController#index as HTML
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:14
+  Rendered routes/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 7671)
+
+
+Started GET "/routes/1/edit" for 127.0.0.1 at 2020-08-04 23:25:59 +0300
+Processing by RoutesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRoute Load (0.3ms)[0m  [1m[34mSELECT "routes".* FROM "routes" WHERE "routes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/routes_controller.rb:45:in `set_route'
+  Rendering routes/edit.html.erb within layouts/application
+  Rendered common/_errors.html.erb (Duration: 0.5ms | Allocations: 201)
+  Rendered routes/_form.html.erb (Duration: 16.2ms | Allocations: 2433)
+  Rendered routes/edit.html.erb within layouts/application (Duration: 17.2ms | Allocations: 2762)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 22.2ms | ActiveRecord: 0.3ms | Allocations: 11336)
+
+
+Started GET "/routes" for 127.0.0.1 at 2020-08-04 23:26:06 +0300
+Processing by RoutesController#index as HTML
+  Rendering routes/index.html.erb within layouts/application
+  [1m[36mRoute Load (0.1ms)[0m  [1m[34mSELECT "routes".* FROM "routes"[0m
+  ↳ app/views/routes/index.html.erb:14
+  Rendered routes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 773)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.1ms | Allocations: 6550)
+
+
