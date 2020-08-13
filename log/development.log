@@ -13038,3 +13038,948 @@ use the `skip_pipeline: true` option.
 Completed 200 OK in 91ms (Views: 85.0ms | ActiveRecord: 0.3ms | Allocations: 89560)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2020-08-13 15:34:45 +0300
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchesController#show as HTML
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mRailwayStation Load (0.7ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
+  ↳ app/views/searches/show.html.erb:6
+  Rendered searches/show.html.erb within layouts/application (Duration: 25.9ms | Allocations: 4018)
+DEPRECATION WARNING: The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:14)
+DEPRECATION WARNING: The asset "apple-touch-icon-114x114-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:18)
+DEPRECATION WARNING: The asset "apple-touch-icon-72x72-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:22)
+DEPRECATION WARNING: The asset "apple-touch-icon-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:26)
+DEPRECATION WARNING: The asset "favicon.ico" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:30)
+Completed 200 OK in 4821ms (Views: 4786.6ms | ActiveRecord: 2.4ms | Allocations: 1440905)
+
+
+Started GET "/images/apple-touch-icon-144x144-precomposed.png" for 127.0.0.1 at 2020-08-13 15:34:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-144x144-precomposed.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2020-08-13 15:34:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/search" for 127.0.0.1 at 2020-08-13 15:34:54 +0300
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for SearchesController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/images/apple-touch-icon-144x144-precomposed.png" for 127.0.0.1 at 2020-08-13 15:34:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-144x144-precomposed.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-08-13 15:35:14 +0300
+Processing by SearchesController#show as HTML
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mRailwayStation Load (0.4ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
+  ↳ app/views/searches/show.html.erb:6
+  Rendered searches/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1045)
+DEPRECATION WARNING: The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:14)
+DEPRECATION WARNING: The asset "apple-touch-icon-114x114-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:18)
+DEPRECATION WARNING: The asset "apple-touch-icon-72x72-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:22)
+DEPRECATION WARNING: The asset "apple-touch-icon-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:26)
+DEPRECATION WARNING: The asset "favicon.ico" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___4088074280371766153_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:30)
+Completed 200 OK in 243ms (Views: 240.9ms | ActiveRecord: 0.4ms | Allocations: 87802)
+
+
+Started GET "/images/apple-touch-icon-144x144-precomposed.png" for 127.0.0.1 at 2020-08-13 15:35:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-144x144-precomposed.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2020-08-13 15:35:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2020-08-13 15:47:56 +0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchesController#show as HTML
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mRailwayStation Load (1.5ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
+  ↳ app/views/searches/show.html.erb:6
+  Rendered searches/show.html.erb within layouts/application (Duration: 47.8ms | Allocations: 3890)
+DEPRECATION WARNING: The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:14)
+DEPRECATION WARNING: The asset "apple-touch-icon-114x114-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:18)
+DEPRECATION WARNING: The asset "apple-touch-icon-72x72-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:22)
+DEPRECATION WARNING: The asset "apple-touch-icon-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:26)
+DEPRECATION WARNING: The asset "favicon.ico" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:30)
+Completed 200 OK in 6772ms (Views: 6737.2ms | ActiveRecord: 6.1ms | Allocations: 1437981)
+
+
+Started GET "/images/apple-touch-icon-144x144-precomposed.png" for 127.0.0.1 at 2020-08-13 15:48:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-144x144-precomposed.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2020-08-13 16:45:01 +0300
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SearchesController#show as HTML
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mRailwayStation Load (1.1ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
+  ↳ app/views/searches/show.html.erb:6
+  Rendered searches/show.html.erb within layouts/application (Duration: 165.5ms | Allocations: 1046)
+DEPRECATION WARNING: The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:14)
+DEPRECATION WARNING: The asset "apple-touch-icon-114x114-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:18)
+DEPRECATION WARNING: The asset "apple-touch-icon-72x72-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:22)
+DEPRECATION WARNING: The asset "apple-touch-icon-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:26)
+DEPRECATION WARNING: The asset "favicon.ico" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2756379120154580944_32060 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:30)
+Completed 200 OK in 1414ms (Views: 1339.3ms | ActiveRecord: 1.1ms | Allocations: 88759)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+Started GET "/" for 127.0.0.1 at 2020-08-13 16:45:36 +0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SearchesController#show as HTML
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mRailwayStation Load (0.8ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
+  ↳ app/views/searches/show.html.erb:6
+  Rendered searches/show.html.erb within layouts/application (Duration: 54.8ms | Allocations: 3890)
+DEPRECATION WARNING: The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___3398274547241960361_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:14)
+DEPRECATION WARNING: The asset "apple-touch-icon-114x114-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___3398274547241960361_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:18)
+DEPRECATION WARNING: The asset "apple-touch-icon-72x72-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___3398274547241960361_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:22)
+DEPRECATION WARNING: The asset "apple-touch-icon-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___3398274547241960361_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:26)
+DEPRECATION WARNING: The asset "favicon.ico" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___3398274547241960361_31960 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:30)
+Completed 200 OK in 5062ms (Views: 5009.7ms | ActiveRecord: 7.2ms | Allocations: 1437698)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTrain Load (0.9ms)[0m  [1m[34mSELECT "trains".* FROM "trains" ORDER BY "trains"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRailwayStation Load (0.8ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations" WHERE "railway_stations"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIndexToTrains (20200813140349)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddIndexToCarriages (20200813142017)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX "index_carriages_on_id_and_type" ON "carriages" ("id", "type")[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200813142017"]]
+  [1m[35m (13.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constant BadgeLabelHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload BadgeLabelHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. This autoloaded constant would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/serg/Документы/tutu/config/environment.rb:5)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddStationsToTickets (20200813144609)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.5ms)[0m  [1m[35mALTER TABLE "tickets" ADD "start_station_id" integer[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX "index_tickets_on_start_station_id" ON "tickets" ("start_station_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "tickets" ADD "end_station_id" integer[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE  INDEX "index_tickets_on_end_station_id" ON "tickets" ("end_station_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200813144609"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRailwayStation Load (0.9ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations" ORDER BY "railway_stations"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRailwayStation Load (0.5ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations" ORDER BY "railway_stations"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTicket Create (5.1ms)[0m  [1m[32mINSERT INTO "tickets" ("user_id", "created_at", "updated_at", "start_station_id", "end_station_id") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["created_at", "2020-08-13 15:29:44.921345"], ["updated_at", "2020-08-13 15:29:44.921345"], ["start_station_id", 1], ["end_station_id", 4]]
+  Rendering tickets_mailer/buy_ticket.html.erb within layouts/mailer
+  Rendered tickets_mailer/buy_ticket.html.erb within layouts/mailer (Duration: 6.3ms | Allocations: 455)
+TicketsMailer#buy_ticket: processed outbound mail in 35.4ms
+Delivered mail 5f355c6964b7f_131e131071380@sss.mail (89.3ms)
+Date: Thu, 13 Aug 2020 18:29:45 +0300
+From: from@example.com
+To: test@test.ru
+Message-ID: <5f355c6964b7f_131e131071380@sss.mail>
+Subject: =?UTF-8?Q?=D0=92=D1=8B_=D0=BA=D1=83=D0=BF=D0=B8=D0=BB=D0=B8?=
+ =?UTF-8?Q?_=D0=B1=D0=B8=D0=BB=D0=B5=D1=82?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCiAgPGhlYWQ+DQogICAgPG1ldGEg
+aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9dXRmLTgiIC8+DQogICAgPHN0eWxlPg0KICAgICAgLyogRW1h
+aWwgc3R5bGVzIG5lZWQgdG8gYmUgaW5saW5lICovDQogICAgPC9zdHlsZT4N
+CiAgPC9oZWFkPg0KDQogIDxib2R5Pg0KICAgIDxwPtC/0YDQuNCy0LXRgiwg
+dGVzdEB0ZXN0LnJ1PC9wPg0KDQo8cD7QktGLINC60YPQv9C40LvQuCDQsdC4
+0LvQtdGCINC/0L4g0LzQsNGA0YjRgNGD0YLRgyAi0JzQvtGB0LrQstCwIC0g
+0JzQsNCz0L3QuNGC0LrQsCI8L3A+DQo8cD7Qn9C+0YHQvNC+0YLRgNC10YLR
+jCDQsdC40LvQtdGCINCy0Ysg0LzQvtC20LXRgtC1IDxhIGhyZWY9Imh0dHA6
+Ly9sb2NhbGhvc3Q6MzAwMC90aWNrZXRzLzQiPtC30LTQtdGB0Yw8L2E+PC9w
+Pg0KPHA+0JLRgdC1INGB0LLQvtC4INCx0LjQu9C10YLRiyDQstGLINC80L7Q
+ttC10YLQtSDQv9C+0YHQvNC+0YLRgNC10YLRjCA8YSBocmVmPSJodHRwOi8v
+bG9jYWxob3N0OjMwMDAvdGlja2V0cyI+0LfQtNC10YHRjDwvYT48L3A+DQog
+IDwvYm9keT4NCjwvaHRtbD4NCg==
+
+  [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/tickets/4" for 127.0.0.1 at 2020-08-13 18:30:08 +0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TicketsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTicket Load (1.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/tickets_controller.rb:5:in `show'
+  Rendering tickets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tickets/show.html.erb:1
+  Rendered tickets/show.html.erb within layouts/application (Duration: 90.0ms | Allocations: 10513)
+DEPRECATION WARNING: The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:14)
+DEPRECATION WARNING: The asset "apple-touch-icon-114x114-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:18)
+DEPRECATION WARNING: The asset "apple-touch-icon-72x72-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:22)
+DEPRECATION WARNING: The asset "apple-touch-icon-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:26)
+DEPRECATION WARNING: The asset "favicon.ico" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:30)
+Completed 200 OK in 4777ms (Views: 4695.7ms | ActiveRecord: 9.1ms | Allocations: 1447373)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2020-08-13 18:30:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/images/apple-touch-icon-144x144-precomposed.png" for 127.0.0.1 at 2020-08-13 18:30:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-144x144-precomposed.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/tickets" for 127.0.0.1 at 2020-08-13 18:30:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/tickets"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/tickets" for 127.0.0.1 at 2020-08-13 18:30:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/tickets"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/images/apple-touch-icon-144x144-precomposed.png" for 127.0.0.1 at 2020-08-13 20:49:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/images/apple-touch-icon-144x144-precomposed.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-08-13 22:08:50 +0300
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SearchesController#show as HTML
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mRailwayStation Load (1.1ms)[0m  [1m[34mSELECT "railway_stations".* FROM "railway_stations"[0m
+  ↳ app/views/searches/show.html.erb:6
+  Rendered searches/show.html.erb within layouts/application (Duration: 449.5ms | Allocations: 3703)
+DEPRECATION WARNING: The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:14)
+DEPRECATION WARNING: The asset "apple-touch-icon-114x114-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:18)
+DEPRECATION WARNING: The asset "apple-touch-icon-72x72-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:22)
+DEPRECATION WARNING: The asset "apple-touch-icon-precomposed.png" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:26)
+DEPRECATION WARNING: The asset "favicon.ico" is not present in the asset pipeline.Falling back to an asset that may be in the public folder.
+This behavior is deprecated and will be removed.
+To bypass the asset pipeline and preserve this behavior,
+use the `skip_pipeline: true` option.
+ (called from _app_views_layouts_application_html_erb___2480226416040886497_32180 at /home/serg/Документы/tutu/app/views/layouts/application.html.erb:30)
+Completed 200 OK in 1720ms (Views: 1572.8ms | ActiveRecord: 46.2ms | Allocations: 93426)
+
+
+Started POST "/search" for 127.0.0.1 at 2020-08-13 22:08:59 +0300
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for SearchesController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
