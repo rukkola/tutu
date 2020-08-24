@@ -26,7 +26,7 @@ class Admin::RailwayStationsController < Admin::BaseController
   # POST /railway_stations.json
   def create
     @railway_station = RailwayStation.new(railway_station_params)
-
+=begin
     respond_to do |format|
       if @railway_station.save
         format.html { redirect_to @railway_station, notice: 'Railway station was successfully created.' }
@@ -36,6 +36,12 @@ class Admin::RailwayStationsController < Admin::BaseController
         format.json { render json: @railway_station.errors, status: :unprocessable_entity }
       end
     end
+=end
+    if @railway_station.save
+        redirect_to @railway_station
+    else
+        render :new
+    end
   end
 
   # PATCH/PUT /railway_stations/1
@@ -43,7 +49,7 @@ class Admin::RailwayStationsController < Admin::BaseController
   def update
     respond_to do |format|
       if @railway_station.update(railway_station_params)
-        format.html { redirect_to @railway_station, notice: 'Railway station was successfully updated.' }
+        format.html { redirect_to admin_railway_station_path, notice: 'Railway station was successfully updated.' }
         format.json { render :show, status: :ok, location: @railway_station }
       else
         format.html { render :edit }

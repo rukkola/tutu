@@ -1,6 +1,6 @@
-<%= form_for [:admin, @railway_station] do |form| %>
+<%= form_for [:admin, station], html: { style: "display: #{hidden ? 'none' : 'block'}" } do |form| %>
   
-  <%= render 'common/errors', resource: @railway_station %>
+  <%= render 'common/errors', resource: station %>
 
   <div class="field">
     <%= form.label :title %>
@@ -8,6 +8,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit t('.submit', action: @railway_station.new_record? ? 'Создать' : 'Изменить') %>
+    <%= form.submit t('.submit', action: station.new_record? ? 'Создать' : 'Изменить') %>
   </div>
 <% end %>
