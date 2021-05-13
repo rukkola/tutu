@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Номер:</strong>
+  <strong>Номер поезда:</strong>
   <%= @train.number %>
 </p>
 
@@ -18,14 +18,14 @@
 	<strong>Вагоны</strong>
 	<ul>
 		<% @train.carriages.each do |car| %>
-			<li><%= link_to "Вагон № #{car.number}", car %></li>
+			<li><%= link_to "Вагон № #{car.number}", admin_carriage_path(car) %></li>
 		<% end %>
 	</ul>
 </p>
 
 <p>
-	<%= link_to "Добавить вагон", new_train_carriage_path(@train) %>
+	<%= link_to "Добавить вагон", new_admin_train_carriage_path(@train) %>
 </p>
 
-<%= link_to 'Редактировать', edit_train_path(@train) %> |
-<%= link_to 'Назад', trains_path %>
+<%= link_to 'Редактировать', edit_admin_train_path(@train) %> |
+<%= link_to 'Назад', admin_trains_path %>

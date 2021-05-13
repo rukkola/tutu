@@ -1,4 +1,4 @@
-<%= form_for(@route) do |form| %>
+<%= form_for([:admin, @route]) do |form| %>
   
   <%= render 'common/errors', resource: @route %>
 
@@ -6,8 +6,6 @@
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
-
- 
 
   <div class="actions">
     <%= form.submit "#{@route.new_record? ? 'Создать' : 'Изменить' }" %>
