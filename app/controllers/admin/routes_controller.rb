@@ -15,7 +15,7 @@ class Admin::RoutesController < Admin::BaseController
 
   def create
   	@route = Route.new(route_params)
-  	
+    
   	if @route.save
   		redirect_to html: @route
   	else
@@ -46,7 +46,7 @@ class Admin::RoutesController < Admin::BaseController
   end
 
   def route_params
-  	params.require(:route).permit(:name)  
+  	params.require(:route).permit(:name, railway_station_ids: [])  
   end
 
 end

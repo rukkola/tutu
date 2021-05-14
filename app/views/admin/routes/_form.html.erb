@@ -7,6 +7,11 @@
     <%= form.text_field :name %>
   </div>
 
+  <div class="field">
+    <%= form.label :railway_station_ids %>
+    <%= form.collection_select :railway_station_ids, RailwayStation.all, :id, :title, {}, {multiple: true} %>
+  </div>
+
   <div class="actions">
     <%= form.submit "#{@route.new_record? ? 'Создать' : 'Изменить' }" %>
   </div>
