@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('a.edit_station').click(function(e) {
 		e.preventDefault();
-
+        
 		var station_id;
 		var form;
 		var title;
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 		if (!$(this).hasClass('cancel')) {
 
-			$(this).html('Cancel');_
+			$(this).html('Cancel');
 			$(this).addClass('cancel');	
 		} else {
 
