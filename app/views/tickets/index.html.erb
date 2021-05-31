@@ -1,0 +1,5 @@
+<h3>Купленные билеты по следующим направлениям:</h3>
+
+<% @tickets.each do |ticket| %>
+  <p><%= ticket.created_at.strftime("%d-%m-%Y") %>, "<%= ticket.route_name %>"</p>
+<% end %>

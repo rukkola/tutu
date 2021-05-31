@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :tickets, only: [:create, :show]
-
   resource :search, only: [:new, :show, :edit, :create] #  в ед числе создается singular
 
   namespace :admin do
@@ -17,13 +16,12 @@ Rails.application.routes.draw do
       resources :carriages, shallow: true # вложенный ресурс (вагон)
     end
 
-    resources :routes
-    resources :tickets
+    resources :routes 
   end
 
+  resources :tickets
   get 'welcome/index'
 
   #root 'welcome#index'
   root 'searches#show'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
