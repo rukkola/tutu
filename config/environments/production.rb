@@ -64,7 +64,7 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -90,6 +90,19 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: "arcane-anchorage-85595.herokuapp.com" }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.mail.ru',
+  port:                 '465',
+  domain:               'arcane-anchorage-85595.herokuapp.com',
+  user_name:            Rails.application.credentials.dig(:mail_smtp, :email),
+  password:             Rails.application.credentials.dig(:mail_smtp, :password),
+  authentication:       :plain,
+  enable_starttls_auto: true,
+  ssl:                  true,
+  tls:                  true }
+  
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write
