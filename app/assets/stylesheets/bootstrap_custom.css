@@ -1,0 +1,15 @@
+/* @import "nbootstrap"; */
+
+html {
+	height: 100%;
+	background: url(tutu.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.root_content {
+	margin-top: 100px;	
+}
+
+body {	
+	opacity: 0.95;
+}

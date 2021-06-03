@@ -1,56 +1,55 @@
 <h1>Поиск билета</h1>
 
-<div class="row">
-	<%= form_tag search_path, class: 'search_form', action: "show",  method: :get do %>
-		<div class="col-md-4">
-			<%= select_tag :start_station, options_from_collection_for_select(@stations, :id, :title, @start_station ? @start_station.id : nil), class: 'form-control' %>
-		</div>
-		<div class="col-md-4">			 
-			<%= select_tag :end_station, options_from_collection_for_select(@stations, :id, :title, @end_station ? @end_station.id : nil), class: 'form-control' %>
-		</div>
-		<div class="col-md-4">
-			<%= submit_tag "Найти", class: 'btn btn-primary find' %>
-		</div>
-   
-    <div class="container">
-        <div class="row">
+  <div class="row">
+  	<%= form_tag search_path, class: 'search_form', action: "show",  method: :get do %>
+  		<div class="col-md-4">
+  			<%= select_tag :start_station, options_from_collection_for_select(@stations, :id, :title, @start_station ? @start_station.id : nil), class: 'form-control' %>
+  		</div>
+  		<div class="col-md-4">			 
+  			<%= select_tag :end_station, options_from_collection_for_select(@stations, :id, :title, @end_station ? @end_station.id : nil), class: 'form-control' %>
+  		</div>
+  		<div class="col-md-4">
+  			<%= submit_tag "Найти", class: 'btn btn-primary find' %>
+  		</div>
+     
+      <div class="container">
+          <div class="row">
 
-          <% if @routes != [] %>
-            <div class="col-sm-4">
-              <h3>Маршруты:</h3>   
-            </div>
-            <div class="col-sm-4">
-              <h3>Билеты:</h3>
-            </div>
-            <div class="col-sm-4">
-              <h3>Стоимость</h3>
-            </div>
-
-            <% @routes.each do |route| %>             
+            <% if @routes != [] %>
               <div class="col-sm-4">
-                  <%= route.name %>
-              </div> 
-
-              <div class="col-sm-4">
-                <% if @start_station %>
-                  <%= @start_station.title %> - <%= @end_station.title %>
-                <% else %>
-                  <th> ... </th>
-                <% end %>
+                <h3>Маршруты:</h3>   
               </div>
               <div class="col-sm-4">
-                <%= link_to 'Купить за 999р', tickets_path(start_station_id: @start_station ? @start_station : route.root_start_station(route), end_station_id: @end_station ? @end_station : route.root_end_station(route)), method: :post %>                 
+                <h3>Билеты:</h3>
               </div>
-             <% end %>
-          <% else %>
               <div class="col-sm-4">
-                <h4>С такими станциями маршрута нет</h4>
-              </div>  
-          <% end %> 
+                <h3>Стоимость</h3>
+              </div>
+
+              <% @routes.each do |route| %>             
+                <div class="col-sm-4">
+                    <%= route.name %>
+                </div> 
+
+                <div class="col-sm-4">
+                  <% if @start_station %>
+                    <%= @start_station.title %> - <%= @end_station.title %>
+                  <% else %>
+                    <th> ... </th>
+                  <% end %>
+                </div>
+                <div class="col-sm-4">
+                  <%= link_to 'Купить за 999р', tickets_path(start_station_id: @start_station ? @start_station : route.root_start_station(route), end_station_id: @end_station ? @end_station : route.root_end_station(route)), method: :post %>                 
+                </div>
+               <% end %>
+            <% else %>
+                <div class="col-sm-4">
+                  <h4>С такими станциями маршрута нет</h4>
+                </div>  
+            <% end %> 
 
           </div>
-        </div>
-     </div> 
- 
-	<% end %>	
-</div>
+       </div> 
+   
+  	<% end %>	
+  </div>
