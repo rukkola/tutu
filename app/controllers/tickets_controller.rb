@@ -15,7 +15,7 @@ class TicketsController < ApplicationController
 		@ticket = current_user.tickets.new(station_params)
 
 		if @ticket.save
-			redirect_to @ticket
+			redirect_to @ticket, notice: 'Письмо о покупки Вам направлено на почту'
 		else
 			redirect_to search_path
 		end
