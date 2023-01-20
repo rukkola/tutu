@@ -1,27 +1,25 @@
 class TicketsController < ApplicationController
-	before_action :authenticate_user! #, only: :create
+before_action :authenticate_user!, only: :create
 
-	def index
-		#byebug
-		#@tickets = Ticket.all.where(user_id: current_user.id)
-		@tickets = current_user.tickets # разлогинивается при таком сценарии
-	end
+  def index
+    @tickets = current_user.tickets
+  end
 
-	def show
-		@ticket = Ticket.find(params[:id])
-	end
+  def show
+    @ticket = Ticket.find(params[:id])
+  end
 
-	def create
-		@ticket = current_user.tickets.new(station_params)
+  def create
+    @ticket = current_user.tickets.new(station_params)
 
-		if @ticket.save
-			redirect_to @ticket, notice: 'Письмо о покупки Вам направлено на почту'
-		else
-			redirect_to search_path
-		end
-	end
+    if @ticket.save
+      redirect_to @ticket, notice: 'Письмо о покупке билета Вам направлено на почту'
+    else
+      redirect_to search_path
+    end
+  end
 
-	private
+  private
 
   def station_params
     params.permit(:start_station_id, :end_station_id)
