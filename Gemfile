@@ -4,7 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.3'
 
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
-
 gem 'pg'
 gem 'puma', '~> 4.1'
 gem 'sass-rails', '>= 6'
@@ -14,7 +13,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'therubyracer'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem "font-awesome-rails"
 gem "jquery-rails"
 
